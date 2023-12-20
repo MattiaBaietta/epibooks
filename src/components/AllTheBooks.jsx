@@ -13,17 +13,17 @@ class Libri extends React.Component{
     
     state={
         libroFantasy:fantasy,
-        /*libroHistory:history[0],
-        libroHorror:horror[0],
-        libroRomance:romance[0],
-        libroScifi:scifi[0],*/
+        libroHistory:history,
+        libroHorror:horror,
+        libroRomance:romance,
+        libroScifi:scifi,
     };
     
     render(){
         
     return (
         <Row>
-            {this.state.libroFantasy.slice(0,15).map(libro=>{
+            {this.state.libroHistory.slice(0,15).map(libro=>{
                 
                 return(
                     

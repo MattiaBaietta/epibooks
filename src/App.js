@@ -4,7 +4,10 @@ import Navigation from './components/Mynav';
 import Myfooter from './components/Myfooter';
 import Container from 'react-bootstrap/Container';
 import Jumbo from './components/Jumbotron';
-import Libri from './components/AllTheBooks';
+
+import fantasy from './data/fantasy.json'
+import BookList from './components/BookList';
+
 
 function App() {
   return (
@@ -12,9 +15,8 @@ function App() {
       <Container>
         <Navigation />
         <Jumbo />
-        <Libri />
+        <BookList arraylibri={fantasy}/>
         <Myfooter />
-        
       </Container>
     </div>
 
